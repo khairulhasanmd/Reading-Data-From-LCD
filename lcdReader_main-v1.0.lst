@@ -1,0 +1,151 @@
+   1               		.file	"lcdReader_main-v1.0.c"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+  15               	.Ltext0:
+  16               	.global	main
+  18               	main:
+  19               	.LFB6:
+  20               	.LM1:
+  21               	/* prologue: function */
+  22               	/* frame size = 0 */
+  23               	.LM2:
+  24 0000 D09A      		sbi 58-32,0
+  25               	.LBB30:
+  26               	.LBB31:
+  27               	.LBB32:
+  28               	.LBB33:
+  29               	.LM3:
+  30 0002 40E9      		ldi r20,lo8(400)
+  31 0004 51E0      		ldi r21,hi8(400)
+  32               	.LVL0:
+  33               	.L6:
+  34               	.LBE33:
+  35               	.LBE32:
+  36               	.LBE31:
+  37               	.LBE30:
+  38               	.LM4:
+  39 0006 D89A      		sbi 59-32,0
+  40 0008 28EE      		ldi r18,lo8(1000)
+  41 000a 33E0      		ldi r19,hi8(1000)
+  42               	.LVL1:
+  43               	.L2:
+  44               	.LBB37:
+  45               	.LBB36:
+  46               	.LBB35:
+  47               	.LBB34:
+  48               	.LM5:
+  49 000c CA01      		movw r24,r20
+  50               	.LVL2:
+  51               	/* #APP */
+  52               	 ;  105 "c:/winavr/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  53 000e 0197      		1: sbiw r24,1
+  54 0010 01F4      		brne 1b
+  55               	 ;  0 "" 2
+  56               	/* #NOAPP */
+  57               	.LBE34:
+  58               	.LBE35:
+  59               	.LM6:
+  60 0012 2150      		subi r18,lo8(-(-1))
+  61 0014 3040      		sbci r19,hi8(-(-1))
+  62               	.LM7:
+  63 0016 01F4      		brne .L2
+  64 0018 28EE      		ldi r18,lo8(1000)
+  65 001a 33E0      		ldi r19,hi8(1000)
+  66               	.LVL3:
+  67               	.L3:
+  68               	.LBE36:
+  69               	.LBE37:
+  70               	.LBB38:
+  71               	.LBB39:
+  72               	.LBB40:
+  73               	.LBB41:
+  74               	.LM8:
+  75 001c CA01      		movw r24,r20
+  76               	.LVL4:
+  77               	/* #APP */
+  78               	 ;  105 "c:/winavr/lib/gcc/../../avr/include/util/delay_basic.h" 1
+  79 001e 0197      		1: sbiw r24,1
+  80 0020 01F4      		brne 1b
+  81               	 ;  0 "" 2
+  82               	/* #NOAPP */
+  83               	.LBE41:
+  84               	.LBE40:
+  85               	.LM9:
+  86 0022 2150      		subi r18,lo8(-(-1))
+  87 0024 3040      		sbci r19,hi8(-(-1))
+  88               	.LM10:
+  89 0026 01F4      		brne .L3
+  90               	.LBE39:
+  91               	.LBE38:
+  92               	.LM11:
+  93 0028 D898      		cbi 59-32,0
+  94 002a 28EE      		ldi r18,lo8(1000)
+  95 002c 33E0      		ldi r19,hi8(1000)
+  96               	.LVL5:
+  97               	.L4:
+  98               	.LBB42:
+  99               	.LBB43:
+ 100               	.LBB44:
+ 101               	.LBB45:
+ 102               	.LM12:
+ 103 002e CA01      		movw r24,r20
+ 104               	.LVL6:
+ 105               	/* #APP */
+ 106               	 ;  105 "c:/winavr/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 107 0030 0197      		1: sbiw r24,1
+ 108 0032 01F4      		brne 1b
+ 109               	 ;  0 "" 2
+ 110               	/* #NOAPP */
+ 111               	.LBE45:
+ 112               	.LBE44:
+ 113               	.LM13:
+ 114 0034 2150      		subi r18,lo8(-(-1))
+ 115 0036 3040      		sbci r19,hi8(-(-1))
+ 116               	.LM14:
+ 117 0038 01F4      		brne .L4
+ 118 003a 28EE      		ldi r18,lo8(1000)
+ 119 003c 33E0      		ldi r19,hi8(1000)
+ 120               	.LVL7:
+ 121               	.L5:
+ 122               	.LBE43:
+ 123               	.LBE42:
+ 124               	.LBB46:
+ 125               	.LBB47:
+ 126               	.LBB48:
+ 127               	.LBB49:
+ 128               	.LM15:
+ 129 003e CA01      		movw r24,r20
+ 130               	.LVL8:
+ 131               	/* #APP */
+ 132               	 ;  105 "c:/winavr/lib/gcc/../../avr/include/util/delay_basic.h" 1
+ 133 0040 0197      		1: sbiw r24,1
+ 134 0042 01F4      		brne 1b
+ 135               	 ;  0 "" 2
+ 136               	/* #NOAPP */
+ 137               	.LBE49:
+ 138               	.LBE48:
+ 139               	.LM16:
+ 140 0044 2150      		subi r18,lo8(-(-1))
+ 141 0046 3040      		sbci r19,hi8(-(-1))
+ 142               	.LM17:
+ 143 0048 01F4      		brne .L5
+ 144 004a 00C0      		rjmp .L6
+ 145               	.LBE47:
+ 146               	.LBE46:
+ 147               	.LFE6:
+ 173               	.Letext0:
+DEFINED SYMBOLS
+                            *ABS*:00000000 lcdReader_main-v1.0.c
+C:\Users\AXIOM\AppData\Local\Temp/ccHECuP0.s:2      *ABS*:0000003f __SREG__
+C:\Users\AXIOM\AppData\Local\Temp/ccHECuP0.s:3      *ABS*:0000003e __SP_H__
+C:\Users\AXIOM\AppData\Local\Temp/ccHECuP0.s:4      *ABS*:0000003d __SP_L__
+C:\Users\AXIOM\AppData\Local\Temp/ccHECuP0.s:5      *ABS*:00000034 __CCP__
+C:\Users\AXIOM\AppData\Local\Temp/ccHECuP0.s:6      *ABS*:00000000 __tmp_reg__
+C:\Users\AXIOM\AppData\Local\Temp/ccHECuP0.s:7      *ABS*:00000001 __zero_reg__
+C:\Users\AXIOM\AppData\Local\Temp/ccHECuP0.s:18     .text:00000000 main
+
+NO UNDEFINED SYMBOLS
