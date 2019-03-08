@@ -16,6 +16,15 @@ int main(void) {
     PORTA &= ~(1 << LED);    // switch off
     _delay_ms(100);
     _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
+    _delay_ms(100);
   }
 return 0;
 }

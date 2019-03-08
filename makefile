@@ -238,7 +238,7 @@ FUNCSIZE = $(NM) --size-sort $(PROJECT).elf
 
 # Compiles program and cleans unnecessary files
 all: begin gccversion sizebefore build-all \
-listsizes sizeafter clean-most finish end
+listsizes sizeafter clean-most program finish end
 
 # Compile the program, default target
 build: begin gccversion sizebefore build-all listsizes sizeafter finish end
